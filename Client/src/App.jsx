@@ -30,7 +30,7 @@ function App() {
           <Route path="cus" element={<CustomerStories/>}/>
         </Routes>
         <Footer />
-      </Router>//thiss
+      </Router>
     </>
   );
 }
