@@ -1,0 +1,507 @@
+.sectionCircleTab {
+  display: flex;
+  width: 100%;
+  height: auto;
+  background-color: #242424;
+  padding: 0 20vh;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.CircleTabcontent {
+  width: 1300px;
+  color: aliceblue;
+  display: flex;
+  align-items: center;
+  height: auto;
+  flex-direction: column;
+  gap: 60px;
+  padding: 32px 12px;
+}
+
+.circlrlower {
+  gap: 60px;
+  padding: 32px 12px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  transition: all 0.3s ease-in-out;
+}
+
+.tabCirclehead {
+  width: 900px;
+  height: 68px;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 38px;
+  text-align: center;
+}
+
+.Circlebuttons {
+  width: 100%;
+  height: 400px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.Circlebutton,
+.Circlebuttonactive {
+  border-radius: 50%;
+  width: 298px;
+  height: 298px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease-in-out;
+}
+
+.Circlebutton {
+  background-color: #6b6c72;
+  color: #242424;
+}
+
+.Circlebuttonactive {
+  background-color: white;
+  color: #242424;
+}
+
+.circles {
+  cursor: pointer;
+  width: 370px;
+  height: 370px;
+  border: 2px solid #954d52;
+  border-radius: 50%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease-in-out;
+}
+
+.circles::before,
+.circles::after {
+  content: "";
+  position: absolute;
+  height: 13%;
+  border-left: 1px solid #6b6c72;
+  border-right: 1px solid #6b6c72;
+  margin-top: 473px;
+}
+
+.dots {
+  width: 27px;
+  height: 27px;
+  background-color: #954d52;
+  border-radius: 50%;
+  position: absolute;
+  top: 355px;
+  left: 46%;
+  transition: all 0.3s ease-in-out;
+}
+
+.notcircles {
+  cursor: pointer;
+  width: 370px;
+  height: 370px;
+  border-radius: 50%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease-in-out;
+}
+
+.circlebtnheading {
+  text-align: center;
+  width: 179px;
+  letter-spacing: 0.5px;
+  word-spacing: 5px;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 34px;
+}
+
+.rectangals {
+  width: 850px;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  padding: 30px;
+  border-top: 1px solid #6b6c72;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+}
+
+.rectangals::before,
+.rectangals::after {
+  content: "";
+  position: absolute;
+  height: 30%;
+  border-left: 1px solid #6b6c72;
+  border-right: 1px solid #6b6c72;
+}
+
+.rectangals::before {
+  left: 0;
+  top: 0;
+}
+
+.rectangals::after {
+  right: 0;
+  top: 0;
+}
+
+.rectangal {
+  width: 255px;
+  height: auto;
+  text-align: center;
+  background-color: white;
+  color: #242424;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  padding: 15px;
+}
+
+.rectangal > h1 {
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 24px;
+  color: rgb(15, 15, 42);
+}
+
+.rectangal > p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: rgb(15, 15, 42);
+}
+
+/* Media Queries */
+@media (max-width: 1200px) {
+  .CircleTabcontent {
+    width: 90%;
+    padding: 0px;
+  }
+  .tabCirclehead {
+    width: 100%;
+  }
+}
+
+
+
+@media (max-width: 1030px) {
+  .sectionCircleTab,
+  .CircleTabcontent {
+    padding: 0;
+    padding-top: 30px;
+  }
+  .CircleTabcontent {
+    gap: 100px;
+  }
+  .circlrlower {
+    width: 100%;
+    align-items: center;
+    gap: 60px;
+    padding: 0;
+  }
+
+  .Circlebuttons {
+    height: auto;
+  }
+
+  .Circlebutton,
+  .Circlebuttonactive {
+    width: 200px;
+    height: 200px;
+  }
+
+  .circles,
+  .notcircles {
+    width: 240px;
+    height: 240px;
+  }
+  .Circlebuttonactive,
+  .Circlebutton {
+    width:200px;
+    height: 200px;
+  }
+  .dots {
+    width: 20px;
+    height: 20px;
+    top: 228px;
+  }
+  .circles::before,
+  .circles::after {
+    top: -205px;
+  }
+  .circlebtnheading {
+    font-size: 22px;
+  }
+  .rectangals {
+    width: 90%;
+    
+  }
+
+  .rectangal {
+    width: 90%;
+  }
+}
+
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+  .sectionCircleTab,
+  .CircleTabcontent {
+    padding: 0;
+  }
+  .CircleTabcontent {
+    gap: 100px;
+  }
+  .circlrlower {
+    width: 100%;
+    align-items: center;
+    gap: 60px;
+    padding: 0;
+  }
+
+  .Circlebuttons {
+    height: auto;
+  }
+
+  .Circlebutton,
+  .Circlebuttonactive {
+    width: 200px;
+    height: 200px;
+  }
+
+  .circles,
+  .notcircles {
+    width: 200px;
+    height: 200px;
+  }
+  .Circlebuttonactive,
+  .Circlebutton {
+    width: 160px;
+    height: 160px;
+  }
+  .dots {
+    width: 20px;
+    height: 20px;
+    top: 186px;
+  }
+  .circles::before,
+  .circles::after {
+    top: -240px;
+  }
+  .circlebtnheading {
+    font-size: 22px;
+  }
+  .rectangals {
+    width: 70%;
+    flex-direction: column;
+  }
+
+  .rectangal {
+    width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  .tabCirclehead{
+    margin-top: 20px;
+    font-size: 20px;
+  }
+  .CircleTabcontent{
+    gap: 220px;
+  }
+  .sectionCircleTab{
+    padding-bottom: 50px;
+  }
+    .tabCirclehead{
+        font-size: 3.6vh;
+    }
+  .Circlebutton,
+  .Circlebuttonactive {
+    width: 150px;
+    height: 150px;
+  }
+  .circlrlower{
+    flex-direction: row;
+    padding-right: 10px;  
+  }
+  .Circlebuttons{
+    flex-direction: column;
+  }
+  .circles {
+    width: 200px;
+    height: 200px;
+  }
+
+  .circlebtnheading {
+    font-size: 21px;
+  }
+
+  .rectangal {
+    width: 100%;
+  }
+  .rectangal>h1{
+    font-size: 18px;
+  }
+  .rectangal>p{
+    font-size: 16px;
+  }
+  .Circlebutton,
+  .Circlebuttonactive {
+    width: 150px;
+    height: 150px;
+  }
+
+  .circles,
+  .notcircles {
+    width: 150px;
+    height: 150px;
+  }
+  .Circlebuttonactive,
+  .Circlebutton {
+    width: 120px;
+    height: 120px;
+  }
+  .dots {
+    width: 20px;
+    height: 20px;
+    top: 65px;
+    left: 137px;
+  }
+  .circles::before,
+  .circles::after {
+    display: none;
+  }
+  .circlebtnheading {
+    font-size: 16px;
+  }
+
+
+  .rectangals{
+    padding: 0px;
+    padding-top: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    border: none;
+    border-left: 2px solid #6b6c72 ;
+ 
+  }
+
+
+.rectangals::before {
+  display: none;
+}
+
+.rectangals::after {
+  display: none;
+}
+
+}
+@media (max-width: 320px) {
+  .tabCirclehead{
+    margin-top: 20px;
+    font-size: 20px;
+  }
+  .CircleTabcontent{
+    gap: 220px;
+  }
+  .sectionCircleTab{
+    padding-bottom: 50px;
+  }
+    .tabCirclehead{
+        font-size: 3.6vh;
+    }
+  .Circlebutton,
+  .Circlebuttonactive {
+    
+    width: 150px;
+    height: 150px;
+  }
+  .circlrlower{
+    flex-direction: row;
+    gap: 0;
+    padding-right: 10px;
+  }
+  .Circlebuttons{
+    flex-direction: column;
+  }
+  .circles {
+    width: 200px;
+    height: 200px;
+  }
+
+  .circlebtnheading {
+    font-size: 21px;
+  }
+
+  .rectangal {
+    width: 100%;
+  }
+  .rectangal>h1{
+    font-size: 18px;
+  }
+  .rectangal>p{
+    font-size: 16px;
+  }
+  .Circlebutton,
+  .Circlebuttonactive {
+    width: 150px;
+    height: 150px;
+  }
+
+  .circles,
+  .notcircles {
+    border: none;
+    width: 150px;
+    height: 150px;
+  }
+  .Circlebuttonactive,
+  .Circlebutton {
+    width: 120px;
+    height: 120px;
+  }
+  .dots {
+    display: none;
+  }
+  .circles::before,
+  .circles::after {
+    display: none;
+  }
+  .circlebtnheading {
+    font-size: 16px;
+  }
+
+
+  .rectangals{
+    padding: 0px;
+    border: none; 
+  }
+
+
+.rectangals::before {
+  display: none;
+}
+
+.rectangals::after {
+  display: none;
+}
+
+}

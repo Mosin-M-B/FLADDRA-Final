@@ -1,0 +1,56 @@
+.herobutton {
+  width: 300px;
+  cursor: pointer;
+  display: flex;
+  height: auto;
+  color: white;
+  gap: 10px;
+  align-items: center;
+  font-size: 70px;
+  transition: color 0.5s ease;
+  
+  display: flex;
+  justify-content: center;
+   /* Transition for text color */
+}
+#arr2>div>.herobtntext>p{
+  color: black;
+}
+#arr2>div:hover{
+  & .p{
+    color: rgba(81, 76, 76, 0.6); 
+  }
+}
+
+
+.herobutton p {
+  font-size: 18px;
+  font-weight: 700;
+  border-bottom: solid rgb(0, 241, 161);
+  width: auto;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding-bottom: 7px;
+}
+
+.herobtnicon {
+  color: rgb(0, 241, 161);
+  transition: transform 0.5s ease, color 0.5s ease; /* Add transition for smooth transform and color change */
+}
+
+.herobutton:hover {
+  color: rgba(81, 76, 76, 0.6); /* Faded color */
+}
+
+.herobutton:hover .herobtnicon {
+  transform: translateX(20px);
+  color: rgba(0, 241, 161, 0.6);
+
+  -webkit-transform: translateX(20px);
+  -moz-transform: translateX(20px);
+  -ms-transform: translateX(20px);
+  -o-transform: translateX(20px);
+  & p {
+    border-bottom: solid rgba(0, 241, 161, 0.6);
+  }
+}

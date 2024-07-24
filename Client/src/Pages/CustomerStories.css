@@ -1,0 +1,210 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+.CustomerStories_hero {
+  background: url("../assets/Fladdra_customer.jpg") no-repeat center center;
+  background-size: cover;
+  font-family: "Barlow", sans-serif;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  padding: 30px;
+}
+
+.CustomerStories_hero .CustomerStories_content h1 {
+  font-family: "Barlow", sans-serif;
+  text-align: center;
+  font-size: 62px;
+  line-height: 74px;
+  padding-top: 10px;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.CustomerStories_hero .CustomerStories_content p {
+  font-family: "Barlow", sans-serif;
+  font-weight: 500;
+  line-height: 26px;
+  font-size: 20px;
+  padding-top: 10px;
+}
+.cus_contents{
+    padding-bottom: 60px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 60px;
+}
+.cus_content{
+    width: 1180px;
+    height: auto;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.cus2{
+    flex-direction: row;
+}
+.cus1_img{
+    width: 486px;
+    height: 486px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.cus1_img>img{
+    height: 486px;
+}
+.cus1_des{
+    width: 560px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.cus1_des >h3{
+    width: 536px;
+    font-size: 28px;
+    line-height: 34px;
+    font-weight: 700;
+} 
+.cus1_des >p{
+    width: 536px;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+}
+.cus1_des>div{
+    font-size: 12px;
+    line-height: 24px;
+    font-weight: 700;
+}
+@media screen and (max-width: 1024px) {
+    .cus_contents{
+        padding-bottom: 60px;
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 40px;
+        overflow: hidden;
+    }
+    .cus_content{
+        gap: 20px;
+    }
+    .cus2{
+        flex-direction: row;
+        
+    }
+    .cus2 .cus1_des{
+        margin-left: 20px;
+    }
+    .cus1_img{
+        width: 400px;
+        height: 400px;
+   
+    }
+    .cus1_img>img{
+        height: 400px;
+    }
+}
+@media screen and (max-width: 769px) {
+    .CustomerStories_hero>.CustomerStories_content>h1{
+        font-size: 45px;
+        line-height: normal;
+        
+    }
+    .CustomerStories_hero>.CustomerStories_content>p{
+        font-size: 18px;
+    }
+    .cus_contents{
+        padding-bottom: 60px;
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 40px;
+        overflow: hidden;
+    }
+    .cus_content{
+        gap: 20px;
+        flex-direction: column;
+        text-align: center;
+    }
+    .cus2 .cus1_des{
+        margin-left: 20px;
+    }
+    .cus1_img{
+        width: 400px;
+        height: 400px;
+   
+    }
+    .cus1_img>img{
+        height: 400px;
+    }
+}
+@media screen and (max-width: 431px){
+    .CustomerStories_hero>.CustomerStories_content>h1{
+        font-size: 30px;
+        line-height: normal;
+        
+    }
+    .CustomerStories_hero>.CustomerStories_content>p{
+        font-size: 16px;
+    }
+    .cus_contents{
+        padding-bottom: 60px;
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 40px;
+        overflow: hidden;
+    }
+    .cus_content{
+        gap: 20px;
+        flex-direction: column;
+        text-align: center;
+        width: 80%;
+    }
+    .cus1_des{
+        align-items: center;
+        width: 100%;
+    }
+    .cus1_des>p{
+        width: 100%;
+    }
+    .cus1_des>h3{
+        font-size: 20px;
+        width: 80%;
+    }
+    .cus1_img{
+        width: 300px;
+        height: 300px;
+   
+    }
+    .cus1_img>img{
+        height: 400px;
+    }
+}

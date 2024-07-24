@@ -1,0 +1,10 @@
+server {
+listen 80;
+  server_name fladdra.com www.fladdra.com;
+  root /home/tabish/Fladdra2/Client;
+  index index.html;
+  
+location / {
+    try_files $uri /index.html =404;
+  }
+}

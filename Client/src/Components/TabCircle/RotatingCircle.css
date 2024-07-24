@@ -1,0 +1,38 @@
+.circle-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+  }
+  
+  .circles {
+    width: 370px;
+    height: 370px;
+    border: 2px solid #954D52;
+    border-radius: 50%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.circles::before,
+.circles::after {
+  content: '';
+    position: absolute;
+    height: 13%;
+    border-left: 1px solid #6B6C72;
+    border-right: 1px solid #6B6C72;
+    margin-top: 473px;
+}
+  .dots {
+    width: 27px; 
+    height: 27px; 
+    background-color: #954D52; 
+    border-radius: 50%;
+    position: absolute;
+    top: 355px; 
+    left: 46%;
+  }
+  
+
+  

@@ -1,0 +1,342 @@
+/* HeroSection.css */
+@import url("https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+.mainhero {
+  background-image: url(../../assets/office2.jpg);
+  background-size: cover; /* Ensure the background covers the entire area */
+  width: 100%;
+  height: 775px;
+  overflow: hidden;
+}
+.Hero {
+  font-family: "Barlow", sans-serif;
+  background: linear-gradient(90deg, #f18484 0%, rgba(238, 0, 114, 0.41) 100%);
+  width: 100%;
+  height: 775px;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  padding: 1.2rem;
+  color: white;
+  padding-left: 9%;
+  overflow: hidden;
+  margin: auto;
+  padding-left: 9%;
+  padding-right: 20vh;
+
+  h1 {
+    font-size: 62px;
+    font-weight: 700;
+    line-height: 74px;
+    display: flex;
+    justify-content: left;
+  }
+
+  .innerheding {
+    position: absolute;
+    font-size: 128px;
+    line-height: 128px;
+    color: rgb(0, 241, 161);
+    font-weight: 700;
+  }
+}
+
+.Heroheadings {
+  padding-left: 9%;
+  padding-right: 20vh;
+  width: 70%;
+  margin-top: 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  position: relative;
+  animation: slide-in 1s ease-out forwards;
+  opacity: 0;
+}
+.roteting {
+  margin-bottom: 40px;
+}
+.roteting .innerheding {
+  transition: opacity 1s ease-in-out;
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -ms-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+}
+
+.herodes {
+  margin-top: 18%;
+  width: 75%;
+
+  h2 {
+    font-size: 38px;
+    text-align: left;
+    line-height: 40px;
+  }
+}
+
+.mainhero {
+  overflow: hidden;
+}
+
+@keyframes slide-in {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes arrow-slide-in {
+  0% {
+    transform: translateX(100%); /* Start off-screen */
+  }
+  100% {
+    transform: translateX(0); /* Final position */
+  }
+}
+
+@keyframes arrow-color-change {
+  0% {
+    background-color: red;
+  }
+  100% {
+    background-color: #282c35;
+  }
+}
+
+@keyframes arrow-color-change-alt {
+  0% {
+    background-color: #282c35;
+  }
+  100% {
+    background-color: red;
+  }
+}
+
+.arrow {
+  position: absolute;
+  width: 200px;
+  /*Adjustsizeasneeded*/
+  height: 400px;
+  /*Adjustsizeasneeded*/
+  clip-path: polygon(54% 0, 100% 50%, 54% 100%, 0 100%, 51% 50%, 0 0);
+  cursor: pointer;
+  animation: arrow-slide-in 2s cubic-bezier(0.42, 0, 0.58, 1) forwards,
+    arrow-color-change 1s cubic-bezier(0.42, 0, 0.58, 1) forwards 1s;
+  -webkit-animation: arrow-slide-in 2s cubic-bezier(0.42, 0, 0.58, 1) forwards,
+    arrow-color-change 1s cubic-bezier(0.42, 0, 0.58, 1) forwards 1s;
+}
+
+.arrow-up {
+  top: 10px;
+  right: -200px; /* Start off-screen */
+  background: red; /* Initial color for arrow 1 */
+  animation-delay: 0.5s, 1.5s; /* Delay to match Heroheadings and then color change */
+}
+
+.arrow-down {
+  top: 350px;
+  right: -380px; /* Start off-screen */
+  background: #282c35; /* Initial color for arrow 2 */
+  animation: arrow-slide-in 1s cubic-bezier(0.42, 0, 0.58, 1) forwards,
+    arrow-color-change-alt 1s cubic-bezier(0.42, 0, 0.58, 1) forwards 1s;
+  animation-delay: 0.5s, 1.5s; /* Delay to match Heroheadings and then color change */
+}
+
+@media (max-width: 1024px) {
+  .Hero {
+    padding-top: 0;
+    padding-left: 0;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .Hero h1 {
+    font-size: 50px;
+  }
+
+  .innerheding {
+    font-size: 96px;
+    line-height: 96px;
+  }
+
+  .Heroheadings {
+    width: 80%;
+    margin-top: 50px;
+    align-items: center;
+    align-items: flex-start;
+    padding-left: 9%;
+  }
+
+  .herodes h2 {
+    font-size: 32px;
+  }
+  .roteting {
+    margin-bottom: 50px;
+  }
+  .arrow-up {
+    right: 80px;
+    z-index: -10;
+  }
+  .arrow-down {
+    right: -55px;
+    z-index: -10;
+  }
+}
+
+/* For large mobile devices */
+@media (max-width: 768px) {
+  .Hero {
+    padding: 0.8rem;
+    padding-left: 0;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .Hero > .h1 {
+    font-size: 50px;
+    border: solid snow;
+  }
+
+  .roteting > .innerheding {
+    font-size: 90px;
+    line-height: 50px;
+    margin-top: 20px;
+  }
+
+  .Heroheadings {
+    width: 90%;
+    margin-top: 40px;
+    display: flex;
+    align-items: flex-start;
+  }
+  .herodes h2 {
+    font-size: 28px;
+  }
+  .arrow-up {
+    right: 90px;
+  }
+  .arrow-down {
+    right: -45px;
+  }
+}
+
+/* For small mobile devices */
+@media (max-width: 480px) {
+  .mainhero {
+    height: 500px;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+  .Hero {
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  .Hero .h1 {
+    font-size: 26px;
+    width: 300px;
+    height: 30px;
+    justify-content: flex-start;
+    margin: 0;
+    line-height: 0;
+  }
+  .Hero > .Heroheadings > .herodes {
+    border: solid black;
+  }
+  .Hero > .Heroheadings > .herodes > h2 {
+    font-size: 20px;
+    width: 100%;
+  }
+
+  .roteting > .innerheding {
+    font-size: 35px;
+    line-height: 48px;
+    left: 20%;
+    margin: 0;
+    width: 100%;
+  }
+
+  .Heroheadings {
+    margin-left: 50px;
+    width: 100%;
+    margin-top: 30px;
+    align-items: center;
+  }
+
+  .herodes h2 {
+    font-size: 20px;
+    width: 100%;
+
+    padding: 0;
+    margin: 0;
+  }
+  .section2text > .herobutton > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    width: auto;
+    gap: 5px;
+  }
+  .Heroheadings > .herobutton {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 75%;
+    height: 50px;
+  }
+  .Heroheadings > .herobutton > div > .herobtntext > p {
+    font-size: 10px;
+    width: 125px;
+  }
+  .Heroheadings > .herobutton > div > .herobtnicon {
+    font-size: 30px;
+  }
+}
+@media (max-width: 391px) {
+  .mainhero {
+    width: 100%;
+  }
+  .mainhero > .Hero > .HeroContent > .Heroheadings > h1 {
+    height: 30px;
+    display: flex;
+    align-items: center;
+    margin-left: 11px;
+  }
+  .mainhero > .Hero > .HeroContent > .Heroheadings {
+    margin: 0;
+    padding: 0;
+    gap: 0;
+  }
+  .mainhero > .Hero > .HeroContent > .Heroheadings > .roteting {
+    padding: 0;
+    overflow: hidden;
+    width: 100%;
+    margin: 0;
+    height: 60px;
+    margin: 0;
+    display: flex;
+    align-items: center;
+  }
+  .mainhero > .Hero > .HeroContent > .Heroheadings > .roteting > h1 {
+    height: 10px;
+    
+    height: 30px;
+    width: 100%;
+    line-height: 12px;
+    margin-left: -30px;
+    padding: 0;
+  }
+  .mainhero > .Hero > .HeroContent > .Heroheadings > .herodes {
+    margin: 0;
+    padding: 0;
+  }
+}

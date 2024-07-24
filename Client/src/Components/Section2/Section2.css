@@ -1,0 +1,535 @@
+.section2 {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 572px;
+  padding-left: 20vh;
+  padding-right: 20vh;
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+
+.sectionContent {
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+}
+.imgs {
+  margin-top: 30px;
+}
+.imgs > img {
+  position: absolute;
+  width: 486px;
+  height: 486px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.circle {
+  background-color: transparent;
+  width: 486px;
+  margin-left: 9%;
+  height: 486px;
+  position: fixed;
+  left: 0.02rem;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  overflow: visible;
+  animation: rotate 10s linear infinite;
+  -webkit-animation: rotate 10s linear infinite;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.section2text {
+  margin-left: 50%;
+  align-self: flex-end;
+}
+.section2text > .sec2ol {
+  margin: 20px 0 20px 40px;
+  text-align: left;
+}
+.section2text > h2 {
+  font-size: 11mm;
+  line-height: 46px;
+  color: rgb(9, 95, 191);
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.section2text > p {
+  margin-top: auto;
+  text-align: left;
+  color: rgb(15, 15, 42);
+  font-weight: 400;
+  font-size: 5.3mm;
+}
+
+.section2text > ol {
+  font-size: 16px;
+  color: rgb(15, 15, 42);
+  font-weight: 400;
+  margin-top: 30px;
+}
+
+.section2text > .sec2ol > ol > li {
+  margin-top: 10px;
+  font-size: 16px;
+  width: 100%;
+  text-align: left;
+  list-style-type: disc;
+}
+
+@media (max-width: 1024px) {
+  .section2 {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+  }
+
+  .sectionContent {
+    width: 100%;
+
+    align-items: center;
+  }
+
+  .imgs {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 350px;
+  }
+
+  .imgs > img {
+    width: 300px;
+    height: 300px;
+  }
+
+  .circle {
+    width: 300px;
+    height: 300px;
+
+    position: relative;
+    animation: rotate 10s linear infinite;
+    -webkit-animation: rotate 10s linear infinite;
+  }
+
+  .section2text {
+    width: 90%;
+    margin-left: 0;
+    align-self: center;
+    text-align: center;
+  }
+
+  .section2text > h2 {
+    font-size: 32px;
+  }
+
+  .section2text > p {
+    font-size: 18px;
+  }
+
+  .section2text > ol {
+    font-size: 16px;
+  }
+
+  .section2text > ol > li {
+    font-size: 18px;
+  }
+}
+
+/* For large mobile devices */
+@media (max-width: 769px) {
+  .section2 {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    padding: 40px;
+    margin-top: 30px;
+  }
+
+  .sectionContent {
+    width: 100%;
+    align-items: center;
+  }
+
+  .imgs {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-self: start;
+  }
+
+  .imgs > img {
+    width: 250px;
+    height: 250px;
+  }
+
+  .circle {
+    width: 250px;
+    height: 250px;
+    left: 10px;
+    position: relative;
+    animation: rotate 10s linear infinite;
+    -webkit-animation: rotate 10s linear infinite;
+  }
+
+  .section2text {
+    margin-left: 0;
+    height: auto;
+    background-color: ;
+    align-self: center;
+    text-align: center;
+  }
+
+  .section2text > h2 {
+    font-size: 28px;
+    text-align: left;
+  }
+
+  .section2text > p {
+    font-size: 16px;
+    text-align: left;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 20px;
+  }
+
+  .section2text > ol {
+    font-size: 15px;
+  }
+
+  .section2text > ol > li {
+    font-size: 17px;
+    text-align: center;
+    list-style-type: none;
+  }
+  .section2text > .herobutton > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    width: auto;
+    gap: 5px;
+  }
+  .section2text > .herobutton {
+    width: 100%;
+
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .section2text > .herobutton > div > .herobtntext > p {
+    font-size: 14px;
+    width: 140px;
+  }
+  .section2text > .herobutton > div > .herobtnicon {
+    font-size: 30px;
+  }
+}
+
+/* For small mobile devices */
+@media (max-width: 480px) {
+  .section2 {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+  }
+
+  .sectionContent {
+    width: 40vh;
+
+    width: 100%;
+
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+  }
+
+  .imgs {
+    position: relative;
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+  }
+
+  .imgs > img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .circle {
+    width: 200px;
+    height: 200px;
+    left: -10px;
+    position: relative;
+    animation: rotate 10s linear infinite;
+    -webkit-animation: rotate 10s linear infinite;
+  }
+
+  .section2text {
+    margin-top: -100px;
+
+    margin-left: 0;
+    align-self: center;
+    width: 100%;
+    text-align: center;
+  }
+
+  .section2text > h2 {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .section2text > p {
+    font-size: 14px;
+    text-align: center;
+    padding-left: 3px;
+    padding-right: 3px;
+  }
+
+  .section2text > ol {
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .section2text > ol > li {
+    font-size: 16px;
+    text-align: center;
+    list-style-type: none;
+  }
+  .section2text > .herobutton > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+    width: auto;
+    gap: 5px;
+  }
+  .section2text > .herobutton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .section2text > .herobutton > div > .herobtntext > p {
+    font-size: 10px;
+    width: 100px;
+  }
+  .section2text > .herobutton > div > .herobtnicon {
+    font-size: 30px;
+  }
+}
+@media (max-width: 413px) {
+  .section2 {
+    margin: 20px 0px;
+    overflow: hidden;
+  }
+  .sectionContent {
+    padding: 0px 0px;
+    margin: 20px 0px;
+    height: 800px;
+  }
+  .section2text {
+    margin-top: 100px;
+    padding: 0px 10px;
+    margin: 0px;
+  }
+  .imgs {
+    width: 350px;
+    height: 350px;
+    margin-bottom: 250px;
+  }
+  .imgs > img {
+    width: 350px;
+    height: 350px;
+  }
+  #circle {
+    width: 350px;
+    height: 350px;
+  }
+}
+@media (max-width: 431px) {
+  .section2 {
+    padding: 10px;
+  }
+  .section2 > .sectionContent {
+    width: 100%;
+  }
+  .section2 > .sectionContent > .imgs > .circle {
+    width: 100%;
+
+    height: 100%;
+  }
+  .imgs {
+    width: 400px;
+    height: 400px;
+  }
+  .circle {
+    left: -30px;
+    width: 400px;
+  }
+}
+@media (max-width: 391px) {
+  .section2 {
+    padding: 10px;
+  }
+  .section2 > .sectionContent {
+    width: 100%;
+  }
+  .circle {
+    left: -30px;
+  }
+}
+@media (max-width: 360px) {
+  .circle {
+    left: 60px;
+  }
+  .section2 {
+    padding: 0;
+    margin: 0;
+  }
+  .section2 > .sectionContent {
+    margin: 0;
+    padding: 0;
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 321px) {
+  .sectionContent {
+    margin-top: 100px;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    align-items: center;
+  }
+
+  .imgs {
+    margin-top: 100px;
+    padding: 0;
+    margin: 0;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .imgs > img {
+    margin-top: 200px;
+    margin-right: 100px;
+    width: 200px;
+    height: 200px;
+  }
+
+  #circle {
+    margin: 0;
+    margin-top: 200px;
+    width: 200px;
+    height: 200px;
+   
+  }
+
+  .section2text {
+    margin-top: -100px;
+    margin-left: 0;
+    align-self: center;
+    text-align: center;
+    border: white;
+  }
+
+  .section2text > h2 {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .section2text > p {
+    font-size: 14px;
+    text-align: center;
+    padding-left: 3px;
+    padding-right: 3px;
+  }
+
+  .section2text > ol {
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .section2text > ol > li {
+    font-size: 16px;
+    text-align: center;
+    list-style: none;
+  }
+  .section2text > .herobutton > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+    width: auto;
+    gap: 5px;
+  }
+  .section2text > .herobutton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .section2text > .herobutton > div > .herobtntext > p {
+    font-size: 10px;
+    width: 100px;
+  }
+  .section2text > .herobutton > div > .herobtnicon {
+    font-size: 30px;
+  }
+}
+/* Section2.css */
+
+@media (max-width: 390px) {
+  .section2 {
+    height: auto;
+    overflow: hidden;
+    margin-top: 30px;
+  }
+
+  .industry-img {
+    height: 300px;
+    width: 300px;
+    margin-right: 40px;
+  }
+
+  .circle-img {
+    height: 300px;
+    width: 300px;
+  }
+
+  .section2text {
+    margin-bottom: 250px;
+    margin-top: 200px;
+  }
+}

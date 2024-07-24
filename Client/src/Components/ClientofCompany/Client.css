@@ -1,0 +1,89 @@
+.clientsheding {
+    display: flex;
+    flex-direction: column;
+    height: 450px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.clientsheding > h1 {
+    font-weight: 700;
+    font-size: 46px;
+    color: rgb(9, 95, 191);
+    line-height: 46px;
+}
+
+.clientlogo {
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 900px;
+    height: 224px;
+    justify-content: center;
+    gap: 30px;
+}
+
+.clientlogo > img {
+    height: 120px;
+    width: 180px;
+}
+
+/* Media Queries */
+
+/* For tablets and small desktops */
+@media (max-width: 1024px) {
+    .clientlogo {
+        width: 700px;
+        gap: 20px;
+    }
+    
+    .clientlogo > img {
+        height: 100px;
+        width: 150px;
+    }
+
+    .clientsheding > h1 {
+        font-size: 36px;
+        line-height: 36px;
+        text-align: center;
+    }
+}
+
+/* For large mobile devices */
+@media (max-width: 768px) {
+    .clientlogo {
+        width: 500px;
+        gap: 15px;
+    }
+    
+    .clientlogo > img {
+        height: 80px;
+        width: 120px;
+    }
+
+    .clientsheding > h1 {
+        font-size: 30px;
+        line-height: 30px;
+        text-align: center;
+    }
+}
+
+/* For small mobile devices */
+@media (max-width: 480px) {
+    .clientlogo {
+        width: 300px;
+        gap: 10px;
+    }
+    
+    .clientlogo > img {
+        height: 60px;
+        width: 90px;
+    }
+
+    .clientsheding > h1 {
+        text-align: center;
+        font-size: 24px;
+        line-height: 24px;
+    }
+}
